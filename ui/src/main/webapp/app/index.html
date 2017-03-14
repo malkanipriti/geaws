@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app="GE-AWS">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GE-AWS</title>
+  <!-- STYLES -->
+  <!-- build:css lib/css/main.min.css -->
+  <link rel="stylesheet" type="text/css" href="app/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="app/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="app/css/app.css">  
+  <!-- endbuild -->  
+</head>
+<body ng-controller="MasterCtrl">
+
+<!-- Header -->
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-toggle"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="app/img/logo.jpg"/></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right" uib-dropdown is-open="status.isopen">        
+        <li class="dropdown">
+          <a id="single-button" class="dropdown-toggle" uib-dropdown-toggle role="button" data-toggle="dropdown" href="#">
+             Madhavi Chavan <i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>          
+        </li>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+          <li role="menuitem"><a href="#">My Profile</a></li>      
+          <li class="divider"></li>
+          <li role="menuitem"><a href="#">Logout</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div><!-- /container -->
+</div>
+   
+<!-- /Header -->
+
+<!-- Main -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 left-sidebar">
+        <!-- left -->
+        <!--h3> Menus</h3>
+        <hr-->      
+        <ul class="nav nav-stacked">
+          <li ng-class="{ active: isActive('/') }"><a ui-sref="case" target=""><i class="fa fa-suitcase" aria-hidden="true"></i> Create Case</a></li>
+          <li ng-class="{ active: isActive('/test') }"><a ui-sref="test" target=""><i class="fa fa-cloud-upload" aria-hidden="true"></i></i> Upload to Cloud</a></li>
+          <li><a href="" target=""><i class="fa fa-calendar" aria-hidden="true"></i> Appointment</a></li>
+          <li><a href="" target=""><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
+          <li><a href="" target=""><i class="fa fa-bar-chart" aria-hidden="true"></i> Statistics</a></li>        
+        </ul>      
+        <!--hr-->      
+    </div><!-- /span-3 -->
+    <div ui-view>Content</div>
+  </div>
+</div>
+<!-- /Main -->
+<footer class="text-center">@ Copyright</footer>
+
+<!-- SCRIPTS -->
+<!-- build:js lib/scripts/main.min.js -->
+<script type="text/javascript" src="app/lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="app/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript" src="app/lib/angular-cookies/angular-cookies.min.js"></script>
+<script type="text/javascript" src="app/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!-- endbuild -->
+<!-- Custom Scripts -->
+<script type="text/javascript" src="app/scripts/app.js"></script>
+<script type="text/javascript" src="app/scripts/routes.js"></script>
+<script type="text/javascript" src="app/scripts/service.js"></script>  
+<script type="text/javascript" src="app/scripts/controller.js"></script> 
+
+</body>
+</html>

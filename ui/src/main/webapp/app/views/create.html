@@ -1,0 +1,23 @@
+<div class="col-sm-10">
+	<!-- column 2 -->
+	<h3>Create Case</h3>
+	<hr>
+	<div ng-show="addResult">Data Added Successfully</div>
+	<form novalidate>
+		Patient Id:<br> <input type="text" ng-model="patient.patientID"><br>
+		Patient Name:<br> <input type="text" ng-model="patient.patientName">
+		<br> Gender : <label> <input type="radio"
+			ng-model="patient.patientGender" value="Male">Male
+		</label> <label> <input type="radio" ng-model="patient.patientGender"
+			value="Female">Female
+		</label> <br> <br>
+		<button ng-click="resetMsg()">Reset</button>
+		 <button ng-click='addPatient()'>Add Patient</button>
+			{{msg}}
+	</form>
+
+
+
+</div>
+
+<!--/col-span-9-->

@@ -1,0 +1,1 @@
+angular.module('GE-AWS', ['ui.bootstrap', 'ui.router', 'ngCookies']);

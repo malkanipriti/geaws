@@ -1,0 +1,20 @@
+{
+  "name": "GE-AWS",
+  "description": "GE-AWS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/madhchav/GE-AWS.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",    
+    "angular-cookies": "~1.5.0",
+    "angular-bootstrap": "~1.0.3",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "html5-boilerplate": "^5.3.0"
+  }
+}
